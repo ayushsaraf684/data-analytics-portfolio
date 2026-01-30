@@ -17,6 +17,27 @@ The emphasis of this project is **SQL-first thinking** rather than dashboards or
 - **GitHub (Private Repository)**
 
 ---
+## Project Structure
+```
+project_01_global_electronics/
+│
+├── 01_data_understanding_and_quality.sql
+├── 02_fact_sales_enrichment.sql
+├── 03_customer_lifecycle_and_retention.sql
+├── 04_miscellaneous_questions.sql
+│
+├── DATA CLEANING.ipynb
+│
+├── Datasets/
+│   ├── Customers.csv
+│   ├── Data_Dictionary.csv
+│   ├── Exchange_Rates.csv
+│   ├── Products.csv
+│   ├── Sales.csv
+│   └── Stores.csv
+│
+└── README.md
+```
 
 ## Initial Data Preparation (Python)
 
