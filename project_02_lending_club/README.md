@@ -67,7 +67,8 @@ And many more...
 ## Tools & Skills Used
 
 - **SQL** – data extraction, joins, aggregations  
-- **Python Pandas** – data cleaning and data preparation  
+- **Python Pandas** – data cleaning and data preparation
+- **Microsoft Excel** - showcase the output and applied data formatting
 
 
 ---
