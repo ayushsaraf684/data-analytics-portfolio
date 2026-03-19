@@ -209,11 +209,67 @@ Note that the outputs may not be the full outputs, as these are just screenshots
 
 ---
 
-## Notes
+## Project Overview
+This project analyzes a global retail electronics dataset using SQL to derive insights across revenue trends, customer behavior, store performance, and operational efficiency. The goal is to simulate real-world business analysis using structured query techniques.
 
-- This repository is private because it contains full query implementations and detailed logic.
-- High-level summaries can be shared publicly, while full walkthroughs are provided through discussion or video.
-- The project reflects my learning process and problem-solving approach, not just final answers.
+---
+
+## Key Insights and Analysis
+
+### Revenue Trends
+- Revenue increased from approximately 1.85M in 2016 to 5.63M in 2019, reflecting nearly threefold growth
+- Revenue declined to around 3.16M in 2020, indicating potential external disruption
+- Monthly revenue remained stable in the range of 1.3M to 1.5M
+- The business experienced strong growth followed by volatility, highlighting the need for forecasting and risk assessment.
+
+---
+
+### Store Performance Analysis
+- Revenue per square meter ranged from approximately 380 to 810
+- Stores with similar sizes showed significant differences in performance
+- Identified multiple stores with zero recorded sales
+- Store efficiency varies widely. Some locations may be underperforming or inactive, presenting opportunities for optimization or cost reduction.
+
+---
+
+### Delivery Performance
+- Around 43 percent of orders were delivered within 33 days
+- Approximately 22 percent of orders were delivered within 5 days
+-  Delivery timelines indicate potential inefficiencies in logistics that could impact customer satisfaction.
+
+---
+
+### Product-Level Insights
+- Identified products generating high revenue but relatively lower profit margins
+- Several top-selling products do not contribute proportionally to profitability
+- Pricing strategies or cost structures may need revision to improve margins.
+
+---
+
+### Customer Segmentation
+- Majority of customers fall under the frequent purchase category
+- Some customers exhibit large gaps between purchases, exceeding 400 days
+- Clear segmentation exists between frequent and occasional buyers, enabling targeted retention strategies.
+
+---
+
+### Age Group Analysis
+- The "Unknown" category contributes disproportionately high revenue compared to other age groups
+- Other segments generate relatively balanced revenue levels
+- This may indicate missing or poor-quality data, or an unclassified but significant customer segment.
+
+---
+
+### Best Performing Stores
+- Online store consistently ranks highest in profit across all years
+- Physical store performance varies by location and region
+- Strong dominance of online channels suggests a shift towards digital retail.
+
+---
+
+### Time-Based Growth Analysis
+- Cumulative revenue and profit show a steady upward trend over time
+- Indicates consistent business expansion and customer retention.
 
 ---
 
