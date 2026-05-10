@@ -8,7 +8,7 @@ from qcomm
 group by city
 order by city;
 
--- cross-platform price consistency check
+-- cross-platform price consistency check AND price variance
 WITH platform_avg_price AS (
     SELECT
         platform,
