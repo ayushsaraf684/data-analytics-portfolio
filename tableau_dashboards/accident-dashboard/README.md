@@ -1,6 +1,8 @@
 # Road Accidents Dashboard (Tableau)
 
-![Dashboard Screenshot](Accident_Dashboard_SS.png)
+## Dashboard Screenshot
+(<img width="3200" height="1800" alt="Accident Dashboard SS" src="https://github.com/user-attachments/assets/719bb3bc-e527-452d-be56-471405fe5970" />
+)
 
 ---
 
