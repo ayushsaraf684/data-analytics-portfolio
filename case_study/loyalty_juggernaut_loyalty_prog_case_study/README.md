@@ -55,7 +55,9 @@ I won't lay out every query and result here since that lives in the SQL file its
 
 I built a Tableau dashboard on top of all this called the Kinara Kirana Customer Dashboard, mainly because a stakeholder is never going to read a SQL file, they're going to look at a screen for ten seconds and want the story handed to them.
 
-![Kinara Kirana Customer Dashboard](dashboard_screenshot.png)
+
+<img width="893" height="504" alt="image" src="https://github.com/user-attachments/assets/b353ae73-fb58-4a01-aec3-6e98ebd2c18c" />
+
 
 It's got the top line numbers up front, total members, total revenue, average spend per customer, average basket value, total points liability, average engagement score, average redemption rate, and a count of high value customers, so anyone glancing at it gets the pulse of the program immediately.
 
