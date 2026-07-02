@@ -22,8 +22,7 @@ Some of what I found staring back at me:
 - 55 rows where the join date came after the last transaction date, which makes no logical sense for a member record.
 - Null cities, null coupon redemptions, null referral counts.
 - Negative total spend on a handful of rows, which obviously cannot exist in real life.
-- Seven rows where a member had redeemed more points than they'd even earned.
-- A scatter of impossible ages, some members supposedly under 18, some past 75.
+- 7 rows where a member had redeemed more points than they'd even earned.
 
 None of this was dramatic on its own, but stacked together it was a genuine data quality audit, not just a cleanup pass. I went column by column, flagged every issue, decided on a fix, and wrote down the reasoning for each one before touching the data. Looking back, that documentation step ended up being more valuable than the fixes themselves, because it forced me to justify every decision instead of just deleting anything that looked weird.
 
