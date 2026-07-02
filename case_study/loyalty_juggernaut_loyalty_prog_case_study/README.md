@@ -71,9 +71,14 @@ Slicers for category, channel, membership status, gender, city, and tier sit on 
 
 ## Closing thoughts
 
+
 I went into this thinking loyalty programs were a fairly simple concept, points in, points out, tiers as a reward ladder. I came out the other side realizing there's a lot more tension underneath that surface, between rewarding customers and managing the liability those rewards create, between making a tier feel exclusive and that tier actually behaving any differently from the one below it.
 
 This was a simulation, built with a fictional company and a generated dataset, but the process behind it, the cleaning, the reasoning, the feature building, the querying, was as real as I could make it. If I got something wrong along the way, I'd genuinely like to know, that's most of the reason I built this in the first place.
+
+** P.S. :- The SQL codes are a little dirty. I lost a major chunk of them while working on this project, so I had to rewrite them from the best of my memory.**
+** P.P.S. :- I loved the name, initially thought of keeping something cool like AyushKart or Little Grain, but this one is fire!!!.**
+
 
 ---
 
