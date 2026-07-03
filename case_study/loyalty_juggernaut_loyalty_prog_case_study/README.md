@@ -125,21 +125,7 @@ Engagement scores are nearly identical across Active, Dormant, and Churn Risk me
 
 ---
 
-### Finding 2 — The longer a member stays, the more likely they are to churn
-
-| Join Year | Total Members | Churned | Churn Rate |
-|---|---|---|---|
-| 2022 | 308 | 83 | **26.95%** |
-| 2023 | 613 | 151 | 24.63% |
-| 2024 | 567 | 133 | 23.46% |
-| 2025 | 595 | 130 | 21.85% |
-| 2026 | 237 | 16 | 6.75% |
-
-Members who joined in 2022 churn at nearly 4x the rate of 2026 joiners. The program is not doing enough to retain long-tenure members — the people who have been around the longest are the ones walking away.
-
----
-
-### Finding 3 — The brand's biggest per-member liability is in its smallest segment
+### Finding 2 — The brand's biggest per-member liability is in its smallest segment
 
 | Tier | Members | Total Unredeemed Points | Avg Per Member |
 |---|---|---|---|
@@ -151,7 +137,7 @@ Platinum members hold 14x more unredeemed points per person than Silver members.
 
 ---
 
-### Finding 4 — Everyone watches Platinum. The real risk is Gold.
+### Finding 3 — Everyone watches Platinum. The real risk is Gold.
 
 | Tier | Total Members | Liability Members | Liability % | Points at Risk |
 |---|---|---|---|---|
@@ -163,7 +149,7 @@ Platinum members hold 14x more unredeemed points per person than Silver members.
 
 ---
 
-### Finding 5 — Platinum spends 13x more than Silver but redeems at the same rate
+### Finding 4 — Platinum spends 13x more than Silver but redeems at the same rate
 
 | Tier | Avg Spend | Avg Transactions | Avg Redemption Rate | Avg Referrals |
 |---|---|---|---|---|
