@@ -25,7 +25,7 @@ SELECT *,
     from lendings)
 select
 revolving_depth,
-ROUND(CAST(AVG(CASE WHEN application_type = 'Joint' THEN annual_income ELSE annual_income_joint end) AS FLOAT),2) as avg_income,
+ROUND(CAST(AVG(CASE WHEN application_type = 'Joint' THEN annual_income_joint ELSE annual_income end) AS FLOAT),2) as avg_income,
 COUNT(loan_amount) AS total_loans,
 ROUND(AVG(cr_util_ratio), 2) AS avg_utilization, 
 ROUND(AVG(CAST(risk_intensity_score AS FLOAT)), 2) AS avg_risk_score,
