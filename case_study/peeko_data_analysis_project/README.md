@@ -22,11 +22,11 @@ Now, the real reason I built this: I am a fresher, and I know that on paper, my 
 
 ## Structure of this README:
 
-Storytelling / Why I Built This
-Project Overview
-Data Collection (Web Scraping)
-Data Cleaning & Feature Engineering
-EDA & Insights (in progress)
+- Storytelling / Why I Built This
+- Project Overview
+- Data Collection (Web Scraping) 
+- Data Cleaning & Feature Engineering
+- EDA & Insights (in progress)
 
 ---
 
@@ -125,6 +125,48 @@ Several new columns were created to make the product data more useful for the co
 
 
 ---
+
+
+Here's the EDA Insights section, matching the style of your existing README (bold label → explanation) but written as a story, not questions:
+
+---
+
+## EDA Insights
+
+Once the data was cleaned and the features were built, I did not just jump into charts randomly. I sat with the dataset for a while and tried to think like someone actually running Peeko, what would matter to a person deciding where to compete, what to stock, and where the money is being left on the table by FirstCry.
+
+Here's how the thinking went, step by step:
+
+- **Pricing by subcategory** → I first wanted to know where FirstCry is priced high and where the discounts are already tight. If a subcategory has a high median price and not much discount happening, that felt like an easy entry point for Peeko to come in slightly cheaper and win customers.
+
+- **Brand dominance and gaps** → After looking at prices, I got curious about who is actually selling in each subcategory. Some places had 4-5 strong brands fighting it out, and some places barely had anyone big present. A crowded subcategory is a hard fight, an empty one is more like an open door.
+
+- **Cheapest brands per unit** → I noticed that just because a brand has the most products does not mean it is the cheapest. So I checked, within each subcategory, which brands are actually offering the best price per unit. Sometimes a small brand with very few products turned out cheaper than a big brand with dozens of SKUs.
+
+- **Real discounts vs inflated prices** → This one came from a slightly suspicious thought. If something says "30% off," is that a real discount or did the price just get marked up first to make the discount look bigger? So I checked how many products have unusually high MRPs compared to their subcategory, to see where the discounts are honest and where they are a bit inflated.
+
+- **Products low on stock but in high demand** → After looking at categories and brands, I wanted to zoom into individual products. If a product has a lot of good reviews and ratings but is almost out of stock, that felt like a very direct opportunity, a parent looking for that exact product on FirstCry might not find it, and that is a chance for Peeko to be there instead.
+
+- **Brands with demand but thin assortment** → Then I connected two things I had already found, which brands have the most products, and which specific products are running low. This showed me brands that clearly have loyal buyers but have not really gone deep with their range in that subcategory. Felt like the most useful finding out of everything, since it points to a very specific gap.
+
+- **Bringing it all together with one score** → By this point I had a lot of separate charts, and even I found it a bit hard to hold all of it in my head at once. So I built one combined score using an idea I have been learning recently in machine learning, normalization, to bring demand, stock urgency, and price value onto the same scale and combine them into a single number. I kept it to just three parts on purpose: does anyone want this product, is FirstCry struggling to keep it in stock, and is there room to compete on price. Everything before this was just observing. This part was about actually deciding what to do with what I found.
+
+---
+
+**Some of the questions I was trying to answer along the way:**
+- Where is FirstCry priced high enough that Peeko could undercut them?
+- Which brands have strong demand but are not backing it up with enough stock or variety?
+- If Peeko had to pick a few products to prioritize first, which ones would actually matter?
+
+The detailed results, charts, and numbers for each of these are covered in the section below.
+
+---
+
+## Closing Note
+
+I really enjoyed working on this project. This was actually my first time using web scraping to this extent, and honestly, it turned out to be one of the best parts of the whole experience. There was a lot to figure out, handling messy data, dealing with missing values, thinking about what data would even be useful, and I learned a lot from just working through those problems on my own.
+
+Beyond the technical side, this project also gave me a chance to actually think like someone working on Peeko's problems, connecting data to real business decisions instead of just running analysis for the sake of it. I really value everything I picked up while building this, and I'm genuinely excited about the possibility of getting a call back from you guys.
 
  
 
