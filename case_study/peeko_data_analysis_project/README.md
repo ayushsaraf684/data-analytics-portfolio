@@ -84,6 +84,7 @@ Each category was passed through the same scraping function, keeping the collect
 | `review_count`   | Review count returned by the API.                                                               |
 | `source`         | Identifies FirstCry as the data source.                                                         |
 
+**The scraping code is in `first_cry_scrapper`, and the final cleaned dataset is saved as `firstcry_competitor_data.csv`.**
 
 ---
 
@@ -102,11 +103,15 @@ Each category was passed through the same scraping function, keeping the collect
 * **Unneeded columns** → removed columns such as `source` and `search_category` after checking that they were not needed for the analysis.
 * **Why these checks were done** → the data was already fairly clean because it came from a structured API, but these checks helped make sure the data was correct and that any mistakes from the scraping process did not affect the analysis.
 
+**The output before feature engineering is saved as `firstcry_clean.csv`.**
+
+
 ---
 
 ###  Feature Engineering
 
-Several new columns were created to make the product data more useful for the competitive and pricing analysis:
+Several new columns were created to make the product data more useful for the competitive and pricing analysis. The final prepared dataset contained **978 products**, with these new columns added for the competitive analysis.
+
 
 * **`demand_signal`** → uses product rating as a simple signal of demand at the SKU level. Review count was not used because FirstCry's review count is linked to the parent product, not to each individual size variant.
 * **`mrp_outlier_flag`** → flags products whose MRP is more than 50% higher than the median MRP of their subcategory. This helps find products with unusually high listed prices.
@@ -116,8 +121,11 @@ Several new columns were created to make the product data more useful for the co
 * **`ppu_rank`** → ranks products within their subcategory based on price per unit. This makes it easier to see which products are relatively cheaper or more expensive.
 * **`sku_count`** → counts how many SKUs a brand has within each subcategory. This gives a simple view of how widely a brand is represented.
 
+**The data cleaning and feature engineering code is in `firstcry_data_prep_and_feature_engineering`, and the final prepared dataset is saved as `firstcry_final_data.csv`.**
+
+
 ---
 
  
 
-The final prepared dataset contained **978 products**, with these new columns added for the competitive analysis.
+
