@@ -25,8 +25,7 @@ Now, the real reason I built this: I am a fresher, and I know that on paper, my 
 Storytelling / Why I Built This
 Project Overview
 Data Collection (Web Scraping)
-Data Cleaning
-Feature Engineering
+Data Cleaning & Feature Engineering
 EDA & Insights (in progress)
 
 ---
@@ -45,3 +44,80 @@ So instead of scraping FirstCry broadly, I narrowed the scope to only the catego
 
 Scope of this project:
 I scraped data from 3 categories (diapering, baby food, baby care) that map directly onto Peeko's core assortment. The full scraping code is available as **'first_cry_scrapper.ipynb'**
+
+---
+## Data Collection (Web Scraping)
+
+* Imported the required libraries for making HTTP requests, parsing JSON responses, handling dataframes, and adding a delay between requests.
+* Instead of scraping the visible HTML product cards, used FirstCry's internal search API to retrieve product listing data in JSON format.
+* Identified the API endpoint and the parameters required to request different pages and search categories.
+* Added request headers such as `User-Agent`, `Referer`, and `X-Requested-With` to make the request resemble a browser-generated request.
+* Created a reusable `scrape_firstcry_category()` function so the same scraping logic could be applied to multiple categories without repeating the code.
+* Used pagination to collect 20 products per page, with up to 50 pages per category, giving roughly 1,000 products per category.
+* Requested each page sequentially and stopped early if the request failed or a page returned no products.
+* The API response contained a JSON object with another JSON string inside `ProductResponse`, so the response was parsed in two steps to reach the actual product list.
+* Extracted only the fields needed for the later competitive analysis rather than keeping the entire API response.
+
+### Categories Scraped
+
+* **Diapering** — searched FirstCry's diapering products.
+* **Baby Food** — searched products related to baby food.
+* **Baby Care** — searched products related to baby care.
+
+Each category was passed through the same scraping function, keeping the collection process consistent across categories.
+
+### Fields Collected
+
+| Field            | Description                                                                                     |
+| ---------------- | ----------------------------------------------------------------------------------------------- |
+| `product_name`   | Name of the product.                                                                            |
+| `brand`          | Brand associated with the product.                                                              |
+| `category`       | FirstCry's main category for the product.                                                       |
+| `subcategory`    | More specific product classification.                                                           |
+| `size`           | Product size or variant information.                                                            |
+| `mrp`            | Listed maximum retail price.                                                                    |
+| `discount_pct`   | Discount percentage offered.                                                                    |
+| `selling_price`  | Actual selling price after discount.                                                            |
+| `price_per_unit` | Price normalized to the relevant unit, useful for comparing products with different pack sizes. |
+| `stock`          | Current stock value returned by the API.                                                        |
+| `rating`         | Product rating.                                                                                 |
+| `review_count`   | Review count returned by the API.                                                               |
+| `source`         | Identifies FirstCry as the data source.                                                         |
+
+
+---
+
+## Data Cleaning & Feature Engineering
+
+### Data Cleaning & Preparation
+
+* **Initial inspection** → checked the dataset shape, column names, data types, and overall structure before starting the analysis.
+* **Missing values** → checked all columns for missing values to make sure they would not cause problems later.
+* **Column names** → changed column names to lowercase and replaced spaces or special characters to make them easier to use in Python.
+* **Data types** → checked columns such as MRP, selling price, discount, stock, rating, and review count and made sure they had the correct numeric type.
+* **Duplicate check** → checked for duplicate products using product name, brand, category, subcategory, and size.
+* **Pricing checks** → checked that the selling price was not higher than the MRP and looked for unusual price values.
+* **Rating checks** → checked that ratings were between 0 and 5.
+* **Discount checks** → checked that discount percentages were between 0% and 100%.
+* **Unneeded columns** → removed columns such as `source` and `search_category` after checking that they were not needed for the analysis.
+* **Why these checks were done** → the data was already fairly clean because it came from a structured API, but these checks helped make sure the data was correct and that any mistakes from the scraping process did not affect the analysis.
+
+---
+
+###  Feature Engineering
+
+Several new columns were created to make the product data more useful for the competitive and pricing analysis:
+
+* **`demand_signal`** → uses product rating as a simple signal of demand at the SKU level. Review count was not used because FirstCry's review count is linked to the parent product, not to each individual size variant.
+* **`mrp_outlier_flag`** → flags products whose MRP is more than 50% higher than the median MRP of their subcategory. This helps find products with unusually high listed prices.
+* **`discount_gap`** → shows how much a product's discount differs from the average discount in its subcategory. A positive value means the product has a higher discount than its peers, while a negative value means it has a lower discount.
+* **`stock_pct_rank`** → ranks each product's stock level compared with other products in the same subcategory.
+* **`stock_flag`** → groups the stock ranking into three simple categories: low, moderate, and healthy.
+* **`ppu_rank`** → ranks products within their subcategory based on price per unit. This makes it easier to see which products are relatively cheaper or more expensive.
+* **`sku_count`** → counts how many SKUs a brand has within each subcategory. This gives a simple view of how widely a brand is represented.
+
+---
+
+ 
+
+The final prepared dataset contained **978 products**, with these new columns added for the competitive analysis.
