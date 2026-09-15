@@ -133,29 +133,25 @@ Here's the EDA Insights section, matching the style of your existing README (bol
 
 ## EDA Insights
 
-
 Once the data was cleaned and features were built, I didn't just jump into charts randomly. I sat with the dataset and tried to think like someone actually running Peeko, what matters when deciding where to compete, what to stock, and where FirstCry might be leaving money on the table.
 
-**Some of the questions I was trying to answer along the way:**
-- Where is FirstCry priced high enough that Peeko could undercut them?
-- Which brands have strong demand but are not backing it up with enough stock or variety?
-- If Peeko had to pick a few products to prioritize first, which ones would actually matter?
+Some of the questions I was trying to answer along the way:
+
+*   Where is FirstCry priced high enough that Peeko could undercut them?
+*   Which brands have strong demand but are not backing it up with enough stock or variety?
+*   If Peeko had to pick a few products to prioritize first, which ones would actually matter?
 
 Here's how the thinking went, step by step:
 
 | Step | What I was thinking |
-|---|---|
-| **Pricing by subcategory** | Wanted to see where FirstCry prices high with tight discounts, since that's an easy spot for Peeko to come in cheaper. |
-| **Brand dominance and gaps** | Checked who actually sells in each subcategory. Crowded ones are a hard fight, empty ones are more of an open door. |
-| **Cheapest brands per unit** | Noticed more products doesn't mean cheaper. Some small brands beat big ones on price per unit. |
-| **Real discounts vs inflated prices** | Got suspicious of "30% off" labels, so I checked if MRPs were inflated first to make discounts look bigger. |
-| **High demand, low stock products** | Zoomed into individual products with good ratings but almost no stock left, a direct opening for Peeko. |
-| **Brands with demand but thin assortment** | Connected brand size with low-stock SKUs to find brands that have loyal buyers but haven't gone deep enough in that subcategory. |
-| **Combined priority score** | Brought demand, stock urgency, and price value together into one score using normalization, an idea I've been learning recently. Everything before this was just observing, this part was deciding what to actually act on. |
-
----
-
-The detailed results, charts, and numbers for each of these are covered in the section below.
+| :--- | :--- |
+| **Pricing by subcategory** | Looked at the standard 28-33% discounts and the Rs 288 median for wipes to find where FirstCry prices high, giving Peeko an easy spot to come in cheaper. |
+| **Brand dominance and gaps** | Checked who sells where. Diapers are crowded with Pampers (85 items) and Huggies (77), but wipes are wide open with no brand crossing double digits, making it an easy entry. |
+| **Cheapest brands per unit** | Noticed that having 472 diaper products doesn't mean they're cheap. Found that smaller brands like Wowper actually beat the big ones at just Rs 8.07 per unit. |
+| **Real discounts vs inflated prices** | Got suspicious of fake "30% off" labels. Found that 40% of rash creams and 36% of wipes were marked up first, while diaper bags actually had real 33.7% deals. |
+| **High demand, low stock products** | Zoomed into highly-rated items that are almost sold out. Bambo Nature popped up 6 times in the top 20, and some diaper bags had just 1 or 2 units left, showing a direct opening for Peeko. |
+| **Brands with demand but thin assortment** | Looked at brands with huge demand but tiny catalogs. Himalaya and Mother Sparsh sell great with just 2 to 8 products, while one brand wasted space with 38 items and zero demand. |
+| **Combined priority score** | Combined demand, low stock, and price into one final score. Diapers naturally topped the list, and Pampers showed up 4 times with different urgency scores, proving some items need restocking way more than others. |
 
 ---
 
