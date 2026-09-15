@@ -1,4 +1,4 @@
-Got it, that's a fair call. Here's the reworked version with proper descriptive headers instead of Q1-Q7## EDA & Insights
+
 
 ### Pricing Patterns Across Subcategories
 Baby Diapers has the most products by far (472 out of 978), so it's clearly the main category people buy from. Almost every subcategory gets discounted around 28-33%, so that seems to be the normal discount level on this platform, not something special. Diaper Rash Cream is the odd one out, it only gets a 10% discount, probably because there are very few brands selling it (only 15 products total), so there's less pressure to cut prices. Diaper Bags are the most expensive item but also get the biggest discount, which makes sense since it's not something people buy often.
