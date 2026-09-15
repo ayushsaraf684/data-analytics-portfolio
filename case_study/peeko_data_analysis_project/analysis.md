@@ -1,35 +1,41 @@
+# Baby Care Products Report
 
+## EDA (What the Data Shows)
 
-### Pricing Patterns Across Subcategories
-Baby Diapers has the most products by far (472 out of 978), so it's clearly the main category people buy from. Almost every subcategory gets discounted around 28-33%, so that seems to be the normal discount level on this platform, not something special. Diaper Rash Cream is the odd one out, it only gets a 10% discount, probably because there are very few brands selling it (only 15 products total), so there's less pressure to cut prices. Diaper Bags are the most expensive item but also get the biggest discount, which makes sense since it's not something people buy often.
+### Pricing and Discounts
+*   **The Biggest Category:** Baby Diapers is by far the largest group, with 472 items. 
+*   **Normal Discounts:** Most items are marked down by 28% to 33%. This seems to be the store's everyday price drop, not a special sale. 
+*   **The Exceptions:** Diaper Rash Cream only has a 10% discount. This is probably because there are only 15 products, so sellers don't feel the need to drop prices to compete. Baby Wipes are the cheapest items overall, costing around Rs 288 on average.
 
-### Brand Competition Within Each Category
-Big brands like Pampers, Huggies, and MamyPoko basically own the Baby Diapers space. But Cloth Diapers is interesting, only two brands (SuperBottoms and Babyhug) control almost all of it. Baby Wipes has no clear leader, lots of small brands, so there's more room to compete there. Rash Cream barely shows up in this chart at all, which again matches how few products exist in that category.
+### Who Rules the Shelves
+*   **Controlled by Big Brands:** Pampers, Huggies, and MamyPoko take up most of the baby diaper space. For cloth diapers, SuperBottoms and Babyhug basically own the category. 
+*   **Wide Open:** Baby Wipes are the opposite. No single brand has more than a handful of products, meaning it's a totally open playing field with no clear winner.
 
-### Finding the Best Value-for-Money Brands
-This only works for Baby Diapers since that's the only category where price-per-unit data is available. Wowper comes out as the cheapest option with 18 products backing it up, so it's a real pattern, not a fluke. A couple of other cheap brands only had 1 product each, so those numbers can't really be trusted the same way. Teddyy is a solid middle-ground brand, cheaper than the big names but still has enough products (13) to mean something.
+### The Cheapest Options (Per Diaper)
+*   **Best Prices:** If you look at the price per single diaper, **Wowper** is the cheapest at Rs 8.07 (and they have 18 products, so we know the price is accurate). **Teddyy** is also cheap at Rs 9.24. 
+*   **Unreliable Numbers:** A couple of other brands were technically cheaper, but they only had one product listed, so we can't really trust those prices.
 
-### Checking If Discounts Are Actually Genuine
-This is where things get a bit tricky. Some categories look like they give good discounts, but they're also the ones where prices get marked up the most before the discount. Rash Cream and Baby Wipes are the biggest examples of this, they show high "inflated MRP" percentages, meaning some products are priced way above the usual price in that category before any discount is applied. Diaper Bags is the opposite case, high discount, but very few inflated prices, so those discounts feel more genuine.
+### Are the Discounts Real?
+*   **Fake Discounts:** Diaper Rash Cream and Baby Wipes look discounted, but 40% and 36% of their products were actually marked up way higher than normal before the "sale" price was applied. 
+*   **Real Discounts:** Diaper Bags have big discounts (33.7%) and very few fake markups (13.5%). These are actual deals.
 
-### Spotting High-Demand Products Running Low on Stock
-This shows which specific products are in high demand but almost out of stock. Bambo Nature shows up a lot here, which is interesting because it's not one of the top 3 brands by number of products, but people clearly want it. A few Diaper Bag products are also almost out of stock. This is basically a "restock these first" list.
+### What People Want But Can't Buy
+*   **Running Out of Stock:** When we looked at highly-rated items that are almost sold out, one brand kept popping up: **Bambo Nature**. It showed up 6 times in the top 20 "almost sold out" list. People clearly want it, but the store isn't keeping enough on the shelves.
 
-### Which Brands Actually Get Customer Attention
-Babyhug comes out on top here, mostly because of one product that has over 17,000 reviews, way more than anything else in the data. Some smaller brands, like a couple of Rash Cream and Wipes brands, get strong attention with barely any products at all, meaning people trust them a lot even though they don't sell much variety. There was also one diaper brand with a lot of products but very little demand, basically a brand that isn't doing much despite having a big presence.
+### Small Brands Doing Big Things
+*   **Huge Demand, Few Products:** Babyhug has massive demand mostly because of one super-popular item with over 17,000 reviews. Small brands like Himalaya Babycare (just 2 products) and Mother sparsh (8 products) are also selling really well despite having very few items. 
+*   **Wasted Space:** Meanwhile, one diaper brand has nearly 38 items on the shelf but nobody is buying them.
 
-### Building a Combined Priority Score
-To pull everything together, I combined demand, stock levels, and price into one score, so it's easier to see which products actually need attention first instead of looking at six different charts separately. The top of the list is almost entirely Baby Diapers, which makes sense since that's the category with the most data and the strongest demand overall. Pampers shows up multiple times in the top spots, but with different scores depending on the specific product, so it's not just "Pampers is popular," it's more about which exact product is running low and worth restocking.
+### What to Restock First
+*   **Diapers are the Priority:** When we combine sales, low stock, and price into a single list, diapers are at the very top. (This is partly because we only had exact per-diaper prices for the diaper category, which boosted their score). Pampers showed up 4 times on this list, proving that some items need restocking way more urgently than others, even within the same brand.
 
----
+***
 
-## What Peeko Should Take Away From This
+## Insights (What Peeko Should Do Next)
 
-1. **Baby Diapers is the core category and should stay the priority.** It has the most products, the most demand, and the clearest restocking needs.
-2. **Not all brands need the same shelf space.** Some brands (like Bambo Nature, Himalaya, Mother Sparsh) get strong demand with very few products. These deserve more attention than their small catalog size suggests.
-3. **Discount percentage alone can be misleading.** Some categories look like they're offering better deals just because prices were marked up first. It's worth checking actual selling price, not just the discount shown.
-4. **Cloth Diapers is controlled by just two brands.** If Peeko wants to sell in this category, it basically means dealing with SuperBottoms and Babyhug specifically.
-5. **Baby Wipes and Rash Cream have less brand competition**, which could be a good place for Peeko to try smaller or newer brands, or even their own private label, since no single brand dominates.
-6. **A few specific products are in urgent need of restocking**, not entire categories. The data points to individual high-demand, low-stock items rather than a general shortage everywhere.
-
----
+*   **Focus on Diapers and Wipes:** These are the everyday items people buy over and over. Keeping them fully stocked is the most important thing you can do.
+*   **Don't fall for fake discounts:** Just because something says "30% off" doesn't mean it's a good deal. Wipes and Rash Cream often have marked-up prices just to make the discount look bigger. Look for real deals, like the ones on Diaper Bags.
+*   **You don't need a massive catalog:** Small brands like Himalaya and Mother sparsh prove that having just a few really good products works better than having dozens of average ones.
+*   **Stock up on Bambo Nature:** People are looking for it, but it's always running out. Buying more of this specific brand is an easy way to boost sales.
+*   **Clear out the dead weight:** Having 38 products from a brand nobody wants just wastes shelf space. If it's not selling, get rid of it to make room for things that do.
+*   **Keep Rash Cream simple:** It's a small category with only 15 items. You don't need to add more brands to it. Just pick the one or two that actually sell well and keep those in stock.
