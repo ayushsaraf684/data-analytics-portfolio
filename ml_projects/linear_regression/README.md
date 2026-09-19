@@ -16,43 +16,7 @@ The interesting part of the project was not just building the model. I also want
 
 The project is currently kept fairly simple in terms of files. Everything is handled inside one notebook.
 
-```text
-Lending Club Dataset
-        ↓
-Data Loading & Initial Exploration
-        ↓
-Feature Engineering
-        ↓
-Handling Missing Values
-        ↓
-Categorical Encoding
-        ↓
-Feature Selection / Removing Irrelevant Columns
-        ↓
-Log Transformations
-        ↓
-Train-Test Split
-        ↓
-Initial Linear Regression Model
-        ↓
-Model Evaluation
-        ↓
-Leakage Investigation
-        ↓
-Remove Leaky Feature
-        ↓
-Rebuild Linear Regression Model
-        ↓
-Residual Analysis
-        ↓
-Monte Carlo Validation
-        ↓
-5-Fold Cross Validation
-        ↓
-Ridge & Lasso Regression
-        ↓
-Final Model Comparison
-```
+<img width="1564" height="1006" alt="ChatGPT Image Sep 19, 2026, 07_57_05 PM" src="https://github.com/user-attachments/assets/f1299477-143c-47ec-b676-dbb90d939912" />
 
 ---
 
