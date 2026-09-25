@@ -152,3 +152,5 @@ These are areas I would explore in a follow-up project rather than adding them h
 ## Data source
 
 National SBA loan dataset, U.S. Small Business Administration, sourced as a public dataset covering 1987 to 2014, linked directly in the notebook. NAICS sector reference from the [U.S. Census Bureau](https://www.census.gov/naics/).
+
+BTW you can click [here](https://pengdsci.github.io/datasets/) directly to get the datasets, download all of them and keep it in a folder. Open your Jupyter Notebook in the same folder to so that you can use my NoteBook directly
